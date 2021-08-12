@@ -1,6 +1,6 @@
 //TASK1
 // let myAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
-// function lengtCheck(arr) {
+// function myAlphabetLength(arr) {
 //     for (let i = 0; i < arr.length; i++) {
 //         console.log(arr[i])
 //     }
@@ -14,7 +14,7 @@
 
 // }
 
-// lengtCheck(myAlphabet)
+// myAlphabetLength(myAlphabet)
 /////TASK2
 // function checkFunc(a, b) {
 //     console.log(a, b)
@@ -25,11 +25,11 @@
 ////TASK3
 // let planetsArr = ['planet1', 'planet3', 'planet3', 'planet4', 'planet5']
 // for (let i=0;i<planetsArr.length;i++){
-//     console.log(planetsArr[i])
+//     console.log(planetsArr[i], "index: " + i)
 // }
-// planetsArr.forEach(function(element)
+// planetsArr.forEach(function(element, index)
 // {
-//     console.log(element)
+//     console.log(element, "index: " + index)
 // })
 
 /////TASK4
@@ -56,7 +56,7 @@
 //     if (answer != -1) {
 //         console.log(student2Courses[j])
 //     }
-// }
+// } 👍
 
 
 /////TASK7
@@ -70,7 +70,7 @@
 //     if(answer!=-1){
 //         console.log(food2[j])
 //     }
-// }
+// }👍
 
 ////TASK8
 // let values1 = ['Apple', 1, false];
@@ -83,8 +83,9 @@
 
 // }
 // for (var k = 0; k < values3.length; k++) {
-//     var answer = values1.indexOf(values3[k]) && values2.indexOf(values3[k])
-//     if (answer !== -1) {
+//     var answer = values1.indexOf(values3[k]) && values2.indexOf(values3[k]) // It always take second result i.e: values2.indexOf(values3[k])
+//.    var answer = values1.indexOf(values3[k]) !== -1 && values2.indexOf(values3[k]) !== -1 // proposed change
+//     if (answer) {
 //         console.log(values3[k])
 //     }
 // }
@@ -93,6 +94,9 @@
 // let furniture = ['Table', 'Chairs','Couch'];
 // let letters=furniture.join(' ')
 // console.log(letters)
-// for(let i =0;i<letters.length;i++){
-//     console.log(letters[i])
+// for(let i =0; i < furniture.length; i++){
+//.    let element = furniture[i] 
+//     for (let j = 0; j < element.length; j++) {
+//        console.log(element[j])
+//   }
 // }
